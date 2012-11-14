@@ -1,0 +1,41 @@
+@import url('reset.css');
+/*
+.clear{clear:both;}
+body{font-family: 'Arvo', arial, serif; color:#333; background:#efefef;}
+/* Layout + Type /
+header{padding:.3em 0; font-size:3.8em; text-align:center;}
+h1{color:#aaa; text-shadow:0 1px 1px #666;}
+#bus_times{padding:1.2em 1.5em 0; text-align:right;}
+li{background:yellow; margin:0 0 1.7em 0; text-align:center; position:relative;}
+li.loading{background:none; font-size:4em; padding:4em 0 0 0;}
+.min{font-size:15em; xfloat:left;}
+.txt{font-size:5em; xfloat:left; xclear:right;}
+.time{font-size:4em; position:absolute; right:1em; top:.4em; background:rgba(0,0,0,.05); padding:.3em .3em .3em .25em;}
+.at{font-size:.7em; position:relative; top:-.25em; color:rgba(0,0,0,.3);}
+*/
+
+body{font-family: 'Arvo', arial, serif; color:#333; background:#efefef;}
+header{text-align:center;}
+h1{color:#aaa; text-shadow:0 1px 1px #666;}
+#bus_times{text-align:right;}
+li{background:yellow; text-align:center; position:relative;}
+li.loading{background:none;}
+.time{position:absolute; background:rgba(0,0,0,.05);}
+.at{position:relative; color:rgba(0,0,0,.3);}
+
+
+/* Mobile Device Styles */
+@media screen and (max-device-width: 480px),
+screen and (max-width: 600px) {
+	/* Handle iOS and Windows Mobile font-sizing - borrowed from ethanmarcotte.com */
+	html{-ms-text-size-adjust: none; -webkit-text-size-adjust: none;}
+	header{padding:.2em 0; font-size:1.5em;}
+	#bus_times{padding:.5em .5em 0;}
+	li{margin:0 0 .5em 0;}
+	li.loading{font-size:2em; padding:4em 0 0 0;}
+	.min{font-size:7em;}
+	.txt{font-size:2em;}
+	.time{font-size:1.9em; right:.6em; top:.4em; padding:.3em .3em .3em .25em;}
+	.at{font-size:.7em; top:-.25em;}
+
+}
